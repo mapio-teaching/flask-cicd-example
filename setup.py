@@ -2,17 +2,17 @@ import io
 
 from setuptools import find_packages, setup
 
-with io.open('README.rst', 'rt', encoding='utf8') as f:
+with io.open('README.md', 'rt', encoding='utf8') as f:
     readme = f.read()
 
 setup(
-    name='flaskr',
+    name='flask-cicd-example',
     version='1.0.0',
-    url='http://flask.pocoo.org/docs/tutorial/',
+    url='https://github.com/mapio-teaching/flask-cicd-example',
     license='BSD',
-    maintainer='Pallets team',
-    maintainer_email='contact@palletsprojects.com',
-    description='The basic blog app built in the Flask tutorial.',
+    maintainer='Massimo Santini',
+    maintainer_email='santini@di.unimi.it',
+    description='An example of CI/CD based on the flaskr app.',
     long_description=readme,
     packages=find_packages(),
     include_package_data=True,
