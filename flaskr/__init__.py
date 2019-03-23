@@ -33,7 +33,7 @@ def create_app(test_config=None, initialize_db=True):
     # register the database commands
     from flaskr import db
     db.init_app(app)
-    if initialize_db:
+    if initialize_db: # pragma: no cover
         with app.app_context(): db.init_db()
 
     # apply the blueprints to the app
